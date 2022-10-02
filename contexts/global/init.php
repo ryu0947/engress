@@ -29,10 +29,10 @@ function add_custom_post_type()
             'menu_icon' => 'dashicons-star-filled',
             'show_in_rest' => 'true',
             'labels' => array(
-                'name' => '制作実績',
-                'all_items' => '制作実績一覧',
-                'add_new' => '新しい制作実績を追加',
-                'add_new_item' => '新しい作実績を追加',
+                'name' => 'お知らせ',
+                'all_items' => 'お知らせ一覧',
+                'add_new' => '新しいお知らせを追加',
+                'add_new_item' => '新しいお知らせを追加',
                 'not_found' => '記事はありません',
                 'not_found_in_trash' => 'ゴミ箱に記事はありません',
             ),
@@ -43,16 +43,6 @@ function add_custom_post_type()
             )
 
         )
-    );
-
-    register_taxonomy(
-        'genre',
-        'works',
-        array(
-            'label' => '制作ジャンル',
-            'hierarchical' => true,
-            'show_ui' => true,
-        ),
     );
 }
 
