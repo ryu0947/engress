@@ -30,11 +30,11 @@
             ?>
         </div>
         <div class="header-right">
-            <div class="header__info info-time">
-                <div class="business-hours">平日08:00〜20:00</div>
-                <div class="tell-number">0123-456-7890</div>
+            <div class="header__info">
+                <div class="header__info-hours">平日08:00〜20:00</div>
+                <div class="header__info-number">0123-456-7890</div>
             </div>
-            <div class="header__btn cta-btn">
+            <div class="header__btn">
                 <a class="request-btn header-request-btn" href="">資料請求</a>
                 <a class="contact-btn" href="">お問い合わせ</a>
             </div>
@@ -57,7 +57,7 @@
             'items_wrap' => '<ul class="%2$s">%3$s</ul>',
         ));
         ?>
-        <div class="cta-btn">
+        <div class="draw-nav__btn">
             <a class="request-btn header-request-btn" href="">資料請求</a>
             <a class="contact-btn" href="">お問い合わせ</a>
         </div>
