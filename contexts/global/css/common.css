@@ -178,8 +178,7 @@ header
   transform: translate(-50%, -50%);
   width: 8px;
   height: 12px;
-  background: url("../../../img/common/tell-icon.svg") no-repeat center /
-    contain;
+  background: url("../../../img/common/tel-icon.png") no-repeat center / contain;
 }
 
 @media screen and (min-width: 1024px) {
