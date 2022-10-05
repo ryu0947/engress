@@ -20,11 +20,11 @@
             wp_nav_menu(array(
                 'theme_location' => 'global-nav',
                 'container' => 'nav',
-                'container_class' => 'header-nav',
+                'container_class' => 'header__nav',
                 'container_id' => 'js-header-nav',
-                'menu_class' => 'header-nav__list',
-                'add_li_class' => 'header-nav__item',
-                'add_a_class' => 'header-nav__link',
+                'menu_class' => 'header__list',
+                'add_li_class' => 'header__item',
+                'add_a_class' => 'header__link',
                 'items_wrap' => '<ul class="%2$s">%3$s</ul>',
             ));
             ?>
