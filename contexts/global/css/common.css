@@ -335,8 +335,13 @@ header
 }
 
 @media screen and (min-width: 1024px) {
-  .footer__container {
+  .footer__body {
     padding: 35px 0 68px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__container {
     margin: auto;
     max-width: 912px;
   }
