@@ -20,6 +20,23 @@ body {
 /*------------------------------------------------------
 コンポーネント
 ------------------------------------------------------*/
+.section-lower-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.section-lower-title--white {
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-lower-title {
+    font-size: 32px;
+  }
+}
+
 .request-btn {
   display: block;
   text-align: center;
@@ -45,7 +62,7 @@ body {
 
 .request-btn:hover,
 .contact-btn:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 /*------------------------------------------------------
 header
@@ -457,4 +474,88 @@ header
 .copy-right {
   font-size: 12px;
   font-weight: bold;
+}
+/*------------------------------------------------------
+CTAエリア
+------------------------------------------------------*/
+.cta__bg {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  background: url("../../../img/common/cta.jpg") no-repeat center / cover;
+}
+
+.cta__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.request-btn--cta {
+  display: block;
+  margin: 26px auto 0;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .request-btn--cta {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.cta__link {
+  display: block;
+  margin-top: 22px;
+  color: #fff;
+  text-decoration: underline;
+  transition: text-decoration 0.3s, opacity 0.3s;
+}
+
+.cta__link:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.cta__foot {
+  padding: 20px 0 23px;
+  background-color: #fff;
+}
+
+.cta__contact {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.cta__text {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.cta__tel {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: calc(38 / 24);
+}
+
+@media screen and (min-width: 1024px) {
+  .cta__tel {
+    font-size: 36px;
+    line-height: calc(50 / 36);
+  }
+}
+
+.cta__hours {
+  display: inline-block;
 }
