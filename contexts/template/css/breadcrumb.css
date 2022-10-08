@@ -1,0 +1,23 @@
+.breadcrumb {
+  padding: 19px 0 19px;
+  background-color: #f8f8f8;
+}
+
+.breadcrumb__text {
+  font-size: 12px;
+}
+
+.breadcrumb__link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .breadcrumb__link {
+    transition: text-decoration 0.5s, opacity 0.5s;
+  }
+
+  .breadcrumb__link:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
