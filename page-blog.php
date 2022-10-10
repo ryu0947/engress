@@ -1,6 +1,8 @@
 <?php get_header(); ?>
-<?php get_template_part("contexts/template/lower-mv"); ?>
-<?php get_template_part("contexts/template/breadccrumb"); ?>
+<div class="mv-lower mv-lower--blog">
+    <h1 class="mv-lower__title"><?php the_title(); ?></h1>
+</div>
+<?php get_template_part("contexts/template/breadcrumb"); ?>
 <section class="blog-lower">
     <div class="inner">
         <h2 class="section-lower-title">新着記事</h2>
