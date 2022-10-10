@@ -21,7 +21,7 @@ register_nav_menus(
 function add_custom_post_type()
 {
     register_post_type(
-        'works',
+        'news',
         array(
             'public' => true,
             'has_archive' => true,
