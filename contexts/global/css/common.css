@@ -358,6 +358,46 @@ header
   line-height: 50px;
 }
 /*------------------------------------------------------
+下層ページ メインビジュアル
+------------------------------------------------------*/
+.mv-lower {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ブログ記事一覧ページ */
+.mv-lower--blog {
+  background-image: url("../../../img/blog/blog.jpg");
+}
+
+/* ニュース記事一覧ページ */
+.mv-lower--news {
+  background-image: url("../../../img/news/news.jpg");
+}
+
+.mv-lower__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower__title {
+    font-size: 32px;
+  }
+}
+
+/*------------------------------------------------------
 フッター
 ------------------------------------------------------*/
 .footer__body {
