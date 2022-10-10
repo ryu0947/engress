@@ -8,3 +8,6 @@ require_once get_theme_file_path('contexts/template/scripts.php', true);
 
 // blog
 require_once get_theme_file_path('contexts/blog/scripts.php', true);
+
+// news
+require_once get_theme_file_path('contexts/news/scripts.php', true);
