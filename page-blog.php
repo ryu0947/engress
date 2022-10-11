@@ -13,7 +13,6 @@
                 'posts_per_page' => 10,
                 'paged' => $paged,
                 'post_type' => 'post',
-                'order' => 'DESC',
                 'orderby' => 'date',
                 'post_status' => 'publish'
             ));
@@ -42,7 +41,7 @@
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <div class="pagenation">
+            <nav class="pagenation">
                 <?php
                 if ($post_pages->max_num_pages > 1) {
                     $page_links =  paginate_links(array(
@@ -56,12 +55,17 @@
                         'type'    => 'array',
                         'total' => $post_pages->max_num_pages
                     ));
-                    echo '<ul class="pagenation__list"><li class="pagenation__item">';
-                    echo join('</li><li class="pagenation__item">', $page_links);
-                    echo '</li></ul>';
+
+                    echo '<ul class="pagenation__list">';
+                    foreach ($page_links as $page_link) {
+                        echo '<li class="pagenation__item">';
+                        echo $page_link;
+                        echo '</li>';
+                    }
+                    echo '</ul>';
                 }
                 ?>
-            </div>
+            </nav>
             <?php wp_reset_postdata(); ?>
         </div>
     </div>

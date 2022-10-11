@@ -27,9 +27,14 @@
                 'next_text' => '',
                 'type'    => 'array',
             ));
-            echo '<ul class="pagenation__list"><li class="pagenation__item">';
-            echo join('</li><li class="pagenation__item">', $page_links);
-            echo '</li></ul>';
+
+            echo '<ul class="pagenation__list">';
+            foreach ($page_links as $page_link) {
+                echo '<li class="pagenation__item">';
+                echo $page_link;
+                echo '</li>';
+            }
+            echo '</ul>';
         }
         ?>
     </div>
