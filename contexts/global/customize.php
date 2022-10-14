@@ -31,3 +31,6 @@ function add_nav_menu_class_link($classes, $item, $args)
     return $classes;
 }
 add_filter('nav_menu_link_attributes', 'add_nav_menu_class_link', 1, 3);
+
+remove_filter('the_content', 'wpautop');
+remove_filter('the_excerpt', 'wpautop');

@@ -6,3 +6,615 @@ img {
 textarea {
   resize: vertical;
 }
+
+body {
+  line-height: calc(27 / 16);
+  font-size: 16px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 500;
+  color: #1b224c;
+  background-color: #fff;
+}
+/*------------------------------------------------------
+モジュール
+------------------------------------------------------*/
+.inner {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    padding: 0 30px;
+    max-width: 900px;
+    margin: auto;
+    box-sizing: content-box;
+  }
+}
+/*------------------------------------------------------
+コンポーネント
+------------------------------------------------------*/
+.section-lower-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.section-lower-title--white {
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-lower-title {
+    font-size: 32px;
+  }
+}
+
+.request-btn {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f5a623;
+  transition: opacity 0.5s;
+}
+
+.contact-btn {
+  display: block;
+  width: 137px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1b224c;
+  transition: opacity 0.5s;
+}
+
+.request-btn:hover,
+.contact-btn:hover {
+  opacity: 0.7;
+}
+/*------------------------------------------------------
+header
+------------------------------------------------------*/
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 10px 0 15px;
+  max-width: 1280px;
+  height: 80px;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__left {
+    column-gap: 40px;
+  }
+}
+
+.header__logo {
+  width: 114px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    width: 136px;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__list {
+    display: flex;
+    column-gap: 28px;
+  }
+
+  .header__link {
+    position: relative;
+    display: inline-block;
+    line-height: calc(29 / 16);
+    font-weight: bold;
+  }
+
+  .header__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1b224c;
+    transition: width 0.3s;
+  }
+
+  .header__link:hover::after {
+    content: "";
+    width: 100%;
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__right {
+    column-gap: 23px;
+  }
+}
+
+.header__info {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 10px;
+    margin-top: 12px;
+  }
+}
+
+.header__hours {
+  line-height: 1;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__hours {
+    font-size: 12px;
+  }
+}
+
+.header__tel {
+  position: relative;
+  padding-left: 13px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header__tel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 12px;
+  background: url("../../../img/common/tel-icon.png") no-repeat center / contain;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__tel {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .header__tel::before {
+    content: "";
+    width: 10px;
+    height: 14px;
+  }
+}
+
+.header__btn {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__btn {
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+.request-btn--header {
+  width: 142px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.draw-btn {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #1b224c;
+  border-radius: 50%;
+}
+
+.draw-btn__item {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  width: 21px;
+  height: 3px;
+  background-color: #1b224c;
+  transition: position 0.3s, transform 0.3s;
+}
+
+.draw-btn__item:first-child {
+  top: 12px;
+}
+
+.draw-btn__item:nth-child(2) {
+  top: 20px;
+}
+
+.draw-btn__item:last-child {
+  top: 28px;
+}
+
+.is-active .draw-btn__item:first-child {
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.is-active .draw-btn__item:nth-child(2) {
+  opacity: 0;
+}
+
+.is-active .draw-btn__item:last-child {
+  top: 20px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .draw-btn {
+    display: none;
+  }
+}
+
+.draw-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.draw-nav.is-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .draw-nav {
+    display: none;
+  }
+}
+
+.draw-nav__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.draw-nav__link {
+  display: inline-block;
+}
+
+.draw-nav__btn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.request-btn--draw {
+  border-radius: 5px;
+}
+
+.request-btn--draw,
+.contact-btn--draw {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+/*------------------------------------------------------
+下層ページ メインビジュアル
+------------------------------------------------------*/
+.mv-lower {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ブログ記事一覧ページ */
+.mv-lower--blog {
+  background-image: url("../../../img/blog/blog.jpg");
+}
+
+/* ニュース記事一覧ページ */
+.mv-lower--news {
+  background-image: url("../../../img/news/news.jpg");
+}
+
+/* コース・料金ページ */
+.mv-lower--course {
+  background-image: url("../../../img/course/course.jpg");
+}
+
+.mv-lower__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower__title {
+    font-size: 32px;
+  }
+}
+
+/*------------------------------------------------------
+フッター
+------------------------------------------------------*/
+.footer__body {
+  padding: 35px 20px 68px;
+  background-color: #1b224c;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__body {
+    padding: 35px 0 68px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    margin: auto;
+    max-width: 912px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    margin-top: 10px;
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 21px;
+  }
+
+  .footer__item:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 21px;
+  }
+}
+
+.footer__link {
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__link {
+    line-height: calc(23 / 16);
+    transition: opacity 0.3s;
+  }
+
+  .footer__link:hover {
+    opacity: 0.6;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 14px;
+  width: 140px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    margin-bottom: 27px;
+    width: 197px;
+  }
+}
+
+.footer__info {
+  text-align: right;
+}
+
+.footer__tel {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__tel {
+    margin-bottom: 11px;
+  }
+}
+
+.footer__tel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 14px;
+  background: url("../../../img/common/tel-icon-white.png") no-repeat center /
+    contain;
+}
+
+.footer__hours {
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer__bottom {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__bottom {
+    text-align: right;
+  }
+}
+
+.copy-right {
+  font-size: 12px;
+  font-weight: bold;
+}
+/*------------------------------------------------------
+CTAエリア
+------------------------------------------------------*/
+.cta__bg {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  background: url("../../../img/common/cta.jpg") no-repeat center / cover;
+}
+
+.cta__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.request-btn--cta {
+  display: block;
+  margin: 26px auto 0;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .request-btn--cta {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.cta__link {
+  display: block;
+  margin-top: 22px;
+  color: #fff;
+  text-decoration: underline;
+  transition: text-decoration 0.3s, opacity 0.3s;
+}
+
+.cta__link:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.cta__foot {
+  padding: 20px 0 23px;
+  background-color: #fff;
+}
+
+.cta__contact {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.cta__text {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.cta__tel {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: calc(38 / 24);
+}
+
+@media screen and (min-width: 1024px) {
+  .cta__tel {
+    font-size: 36px;
+    line-height: calc(50 / 36);
+  }
+}
+
+.cta__hours {
+  display: inline-block;
+}
