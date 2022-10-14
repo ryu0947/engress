@@ -379,6 +379,11 @@ header
   background-image: url("../../../img/news/news.jpg");
 }
 
+/* コース・料金ページ */
+.mv-lower--course {
+  background-image: url("../../../img/course/course.jpg");
+}
+
 .mv-lower__title {
   position: absolute;
   top: 50%;
