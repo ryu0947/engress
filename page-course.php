@@ -22,7 +22,7 @@
                 <div class="price-table__head">基礎プラン</div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
-                        <div class="price-table__money">59,000円〜</div>
+                        <div class="price-table__money"><?php the_field('basis_plan'); ?></div>
                         <span class="price-table__text">*月額（税抜価格）</span>
                     </div>
                     <ul class="price-table__feature">
@@ -36,7 +36,7 @@
                 <div class="price-table__head">演習プラン</div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
-                        <div class="price-table__money">75,000円〜</div>
+                        <div class="price-table__money"><?php the_field('exercises_plan'); ?></div>
                         <span class="price-table__text">*月額（税抜価格）</span>
                     </div>
                     <ul class="price-table__feature">
@@ -52,7 +52,7 @@
                 <div class="price-table__head price-table__head--recommend"><span class="price-table__head-text">おすすめ</span><span class="price-table__head-text">志望校対策プラン</span></div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
-                        <div class="price-table__money price-table__money--yellow">95,000円〜</div>
+                        <div class="price-table__money price-table__money--yellow"><?php the_field('zhimang_school_plan'); ?></div>
                         <span class="price-table__text">*月額（税抜価格）</span>
                     </div>
                     <ul class="price-table__feature">
@@ -69,7 +69,7 @@
                 <div class="price-table__head">フッレックスプラン</div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
-                        <div class="price-table__money">60,000円〜</div>
+                        <div class="price-table__money"><?php the_field('flex_plan'); ?></div>
                         <span class="price-table__text">*月額（税抜価格）</span>
                     </div>
                     <p class="price-table__text">＊別途ご相談ください</p>
