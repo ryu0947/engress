@@ -3,6 +3,12 @@
   background-color: #f8f8f8;
 }
 
+.breadcrumb-icon {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 11px;
+}
+
 .breadcrumb__text {
   font-size: 12px;
 }
