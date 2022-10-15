@@ -26,7 +26,13 @@
                     <time class="article__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
                 </div>
                 <div class="article__thumb">
-                    <?php the_post_thumbnail('full'); ?>
+                    <?php
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('full');
+                    } else {
+                        echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                    }
+                    ?>
                 </div>
             </div>
             <section class="article__body">
@@ -55,7 +61,11 @@
                                             ?>
                                         </div>
                                         <?php
-                                        the_post_thumbnail('full', ['class' => 'article-recommend__img']);
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', ['class' => 'article-recommend__img']);
+                                        } else {
+                                            echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                                        }
                                         ?>
                                     </div>
                                     <div class="article-recommend__meta">

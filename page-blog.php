@@ -28,7 +28,11 @@
                                 ?>
                             </div>
                             <?php
-                            the_post_thumbnail('full', ['class' => 'blog-lower__img']);
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('full', ['class' => 'blog-lower__img']);
+                            } else {
+                                echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                            }
                             ?>
                         </div>
                         <div class="blog-lower__info">
