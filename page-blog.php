@@ -28,9 +28,7 @@
                                 ?>
                             </div>
                             <?php
-                            if (has_post_thumbnail()) {
-                                the_post_thumbnail('full', ['class' => 'blog-lower__img']);
-                            }
+                            the_post_thumbnail('full', ['class' => 'blog-lower__img']);
                             ?>
                         </div>
                         <div class="blog-lower__info">
