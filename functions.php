@@ -14,3 +14,6 @@ require_once get_theme_file_path('contexts/news/scripts.php', true);
 
 // course
 require_once get_theme_file_path('contexts/course/scripts.php', true);
+
+// single
+require_once get_theme_file_path('contexts/single/scripts.php', true);
