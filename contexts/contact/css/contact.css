@@ -1,0 +1,234 @@
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.contact {
+  padding: 40px 0 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 58px 0 82px;
+  }
+}
+
+.contact__inner {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__inner {
+    margin: auto;
+    padding: 0 30px;
+    max-width: 700px;
+    box-sizing: content-box;
+  }
+}
+
+.contact form {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact form {
+    margin-top: 41px;
+  }
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact__item--tel {
+  margin-bottom: 24px;
+}
+
+.contact__item--radio {
+  margin-bottom: 24px;
+}
+
+.contact__item--textarea {
+  margin-bottom: 30px;
+}
+
+.contact__title {
+  margin-bottom: 10px;
+}
+
+.contact__title--radio {
+  margin-bottom: 19px;
+}
+
+.contact__input {
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border: 0.5px solid #1b224c;
+  background-color: #fff;
+}
+
+.contact__input::placeholder {
+  font-size: 12px;
+  color: #b4b4b4;
+}
+
+.contact__input--textarea {
+  padding: 23px 22px;
+  height: 240px;
+  line-height: calc(27 / 16);
+  resize: none;
+}
+
+.contact__text-bold {
+  font-weight: bold;
+}
+
+.contact__radio {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.radio-name {
+  display: inline-block;
+  position: relative;
+  padding-left: 39px;
+  cursor: pointer;
+}
+
+.radio-name::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  border-radius: 9999px;
+  background-color: #fff;
+}
+
+.radio-name::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background-color: #1b224c;
+  opacity: 0;
+}
+
+.radio:checked + .radio-name::after {
+  content: "";
+  opacity: 1;
+}
+
+.contact__privacy-text {
+  text-align: center;
+}
+
+.contact__privacy-link {
+  margin-bottom: 33px;
+  color: #f5a623;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__privacy-link {
+    transition: opacity 0.5s, text-decaration 0.5s;
+  }
+
+  .contact__privacy-link:hover {
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+.contact__check-text {
+  text-align: center;
+  margin-top: 31px;
+}
+
+.contact__check-area {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.contact__check-area::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #707070;
+  background-color: #fff;
+}
+
+.contact__check-area::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 7px;
+  height: 14px;
+  border: 2px solid #1b224c;
+  border-left: transparent;
+  border-top: transparent;
+  opacity: 0;
+}
+
+.contact__check:checked + .contact__check-area::after {
+  content: "";
+  opacity: 1;
+}
+
+.contact__btn {
+  margin-top: 48px;
+}
+
+.submit-btn {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #1b224c;
+  background-color: #1b224c;
+}
+
+@media screen and (min-width: 1024px) {
+  .submit-btn {
+    transition: background 0.5s, color 0.5s;
+  }
+
+  .submit-btn:hover {
+    color: #1b224c;
+    background-color: #fff;
+  }
+}
