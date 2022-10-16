@@ -1,61 +1,61 @@
-.blog-lower {
+.blog {
   padding: 40px 0 80px;
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower {
+  .blog {
     padding: 58px 0 106px;
   }
 }
 
-.blog-lower__list {
+.blog__list {
   margin-top: 30px;
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower__list {
+  .blog__list {
     margin-top: 60px;
   }
 }
 
-.blog-lower__item {
+.blog__item {
   display: flex;
   column-gap: 18px;
 }
 
-.blog-lower__item:not(:first-child) {
+.blog__item:not(:first-child) {
   margin-top: 41px;
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower__item {
+  .blog__item {
     column-gap: 50px;
   }
 
-  .blog-lower__item:not(:first-child) {
+  .blog__item:not(:first-child) {
     margin-top: 93px;
   }
 }
 
-.blog-lower__picture {
+.blog__picture {
   position: relative;
   flex: 0 0 140px;
   max-height: 103px;
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower__picture {
+  .blog__picture {
     flex: 0 0 240px;
     max-height: 179px;
   }
 }
 
-.blog-lower__img {
+.blog__img {
   height: 100%;
   object-fit: cover;
 }
 
-.blog-lower__category {
+.blog__category {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,15 +66,15 @@
   background-color: #1b224c;
 }
 
-.blog-lower__info {
+.blog__info {
   flex: 0 1 100%;
 }
 
-.blog-lower__date {
+.blog__date {
   line-height: 1;
 }
 
-.blog-lower__title {
+.blog__title {
   margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
@@ -82,14 +82,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower__title {
+  .blog__title {
     margin-top: 10px;
     font-size: 26px;
     line-height: calc(39 / 26);
   }
 }
 
-.blog-lower__link {
+.blog__link {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -99,18 +99,18 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .blog-lower__link {
+  .blog__link {
     -webkit-line-clamp: 2;
     transition: text-decoration 0.5s, opacity 0.5s;
   }
 
-  .blog-lower__link:hover {
+  .blog__link:hover {
     opacity: 0.6;
     text-decoration: none;
   }
 }
 
-.blog__lower__text {
+.blog__text {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -120,7 +120,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .blog__lower__text {
+  .blog__text {
     -webkit-line-clamp: 2;
   }
 }
