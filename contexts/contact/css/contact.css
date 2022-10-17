@@ -232,3 +232,25 @@ input[type="radio"] {
     background-color: #fff;
   }
 }
+
+.thanks {
+  padding: 83px 0 80px;
+  text-align: center;
+}
+
+.thanks__link {
+  display: inline-block;
+  margin-top: 83px;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .thanks__link {
+    transition: opacity 0.5s, text-decoration 0.5s;
+  }
+
+  .thanks__link:hover {
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}

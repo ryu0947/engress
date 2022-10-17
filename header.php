@@ -35,8 +35,8 @@
                 <div class="header__tel">0123-456-7890</div>
             </div>
             <div class="header__btn">
-                <a class="request-btn request-btn--header" href="">資料請求</a>
-                <a class="contact-btn" href="">お問い合わせ</a>
+                <a class="request-btn request-btn--header" href="<?php echo esc_url(home_url('/contact')); ?>">資料請求</a>
+                <a class="contact-btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
             </div>
             <button id="js-draw-btn" class="draw-btn" type="button">
                 <span class="draw-btn__item"></span>
@@ -58,8 +58,8 @@
             ));
             ?>
             <div class="draw-nav__btn">
-                <a class="request-btn request-btn--draw" href="">資料請求</a>
-                <a class="contact-btn contact-btn--draw" href="">お問い合わせ</a>
+                <a class="request-btn request-btn--draw" href="<?php echo esc_url(home_url('/contact')); ?>">資料請求</a>
+                <a class="contact-btn contact-btn--draw" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
             </div>
         </div>
     </nav>
