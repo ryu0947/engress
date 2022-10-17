@@ -64,7 +64,7 @@
                                         if (has_post_thumbnail()) {
                                             the_post_thumbnail('full', ['class' => 'article-recommend__img']);
                                         } else {
-                                            echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                                            echo '<img class= "article-recommend__img" src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
                                         }
                                         ?>
                                     </div>
@@ -83,8 +83,7 @@
             </section>
         </article>
     </main>
-    <aside class="aside">
-    </aside>
+    <?php get_sidebar(); ?>
 </div>
 <?php get_template_part("contexts/template/cta"); ?>
 <?php get_footer(); ?>

@@ -384,6 +384,11 @@ header
   background-image: url("../../../img/course/course.jpg");
 }
 
+/* お問い合わせページ */
+.mv-lower--contact {
+  background-image: url("../../../img/contact/contact.jpg");
+}
+
 .mv-lower__title {
   position: absolute;
   top: 50%;

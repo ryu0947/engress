@@ -17,3 +17,9 @@ require_once get_theme_file_path('contexts/course/scripts.php', true);
 
 // single
 require_once get_theme_file_path('contexts/single/scripts.php', true);
+
+// sidebar
+require_once get_theme_file_path('contexts/sidebar/scripts.php', true);
+
+// contact
+require_once get_theme_file_path('contexts/contact/scripts.php', true);

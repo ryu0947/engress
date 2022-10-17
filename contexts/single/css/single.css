@@ -1,12 +1,12 @@
 .blog-wrapper {
-  padding: 0 20px;
+  padding: 40px 20px 48px;
 }
 
 @media screen and (min-width: 1024px) {
   .blog-wrapper {
     display: flex;
     column-gap: 36px;
-    padding: 0;
+    padding: 60px 0 68px;
     margin: auto;
     max-width: 895px;
   }
@@ -17,7 +17,7 @@
     max-width: 590px;
   }
 
-  .aside {
+  .sidebar {
     max-width: 269px;
   }
 }
@@ -29,16 +29,6 @@
 @media screen and (min-width: 1024px) {
   .article-news {
     padding: 60px 0 53px;
-  }
-}
-
-.article-blog {
-  padding: 40px 0 48px;
-}
-
-@media screen and (min-width: 1024px) {
-  .article-blog {
-    padding: 60px 0 68px;
   }
 }
 
@@ -328,13 +318,7 @@
 }
 
 .article-recommend {
-  margin-top: 40px;
-}
-
-@media screen and (min-width: 1024px) {
-  .article-recommend {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 
 .article-recommend__title {
@@ -374,15 +358,13 @@
 .article-recommend__thumb {
   position: relative;
   flex: 0 0 140px;
-  min-height: 102px;
-  max-height: 102px;
+  height: 102px;
 }
 
 @media screen and (min-width: 1024px) {
   .article-recommend__thumb {
     flex: 0 0 210px;
-    min-height: 128px;
-    max-height: 128px;
+    height: 128px;
   }
 }
 
@@ -411,7 +393,7 @@
 }
 
 .article-recommend__name {
-  margin-top: 16px;
+  margin-top: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
