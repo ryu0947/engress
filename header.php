@@ -11,11 +11,7 @@
 <body>
     <header class="header">
         <div class="header__left">
-            <?php if (is_front_page()) : ?>
-                <h1 class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/img/common/logo-header.png" alt="Engress"></h1>
-            <?php else : ?>
-                <div class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/img/common/logo-header.png" alt="Engress"></div>
-            <?php endif; ?>
+            <div class="header__logo"><img src="<?php echo get_template_directory_uri() ?>/img/common/logo-header.png" alt="Engress"></div>
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'global-nav',
