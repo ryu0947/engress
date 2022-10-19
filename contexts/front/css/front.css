@@ -236,3 +236,127 @@
   font-size: 18px;
   text-align: center;
 }
+
+.feature {
+  padding: 59px 0 39px;
+}
+
+.feature__item:first-of-type {
+  margin-top: 50px;
+}
+
+.feature__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__item {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  .feature__item--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.feature__description {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__description {
+    margin-bottom: 0;
+    flex: 0 1 100%;
+  }
+}
+
+.feature__label {
+  display: inline-block;
+  padding: 6px 25px 8px 25px;
+  line-height: calc(20 / 12);
+  font-size: 12px;
+  color: #fff;
+  background-color: #f5a623;
+}
+
+.feature__title {
+  margin: 17px 0 20px;
+  line-height: calc(33 / 20);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__title {
+    margin: 25px 0 28px;
+    line-height: calc(39 / 26);
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature__thumb {
+    flex: 0 0 350px;
+  }
+}
+
+.plan {
+  position: relative;
+  margin-top: 46px;
+  width: 100%;
+  height: 217px;
+  background: url("../../../img/front/price.jpg") no-repeat center / cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan {
+    margin-top: 93px;
+  }
+}
+
+.plan__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plan__title {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__title {
+    font-size: 26px;
+  }
+}
+
+.plan__btn {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__btn {
+    transition: background 0.5s, color 0.5s;
+  }
+
+  .plan__btn:hover {
+    color: #1b224c;
+    background-color: #fff;
+  }
+}
