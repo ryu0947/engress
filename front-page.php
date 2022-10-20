@@ -67,6 +67,46 @@
             </div>
         </div>
     </section>
+    <section class="example">
+        <div class="inner">
+            <h2 class="section-title section-title--white">TOEFL成功事例</h2>
+            <div class="example__list">
+                <div class="example__item">
+                    <p class="example__head">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
+                    <div class="example__picture">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-1.jpg" alt="">
+                    </div>
+                    <div class="example__foot">
+                        <p class="example__foot-item">会社員</p>
+                        <p class="example__foot-item">T.Fujiyamaさん</p>
+                        <p class="example__foot-item">3ヶ月でTOEFL80→108点</p>
+                    </div>
+                </div>
+                <div class="example__item">
+                    <p class="example__head">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
+                    <div class="example__picture">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-2.jpg" alt="">
+                    </div>
+                    <div class="example__foot">
+                        <p class="example__foot-item">大学生</p>
+                        <p class="example__foot-item">Y.Takiyamaさん</p>
+                        <p class="example__foot-item">6ヶ月でTOEFL40→100点</p>
+                    </div>
+                </div>
+                <div class="example__item">
+                    <p class="example__head">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
+                    <div class="example__picture">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-3.jpg" alt="">
+                    </div>
+                    <div class="example__foot">
+                        <p class="example__foot-item">高校生</p>
+                        <p class="example__foot-item">M.Yamadaさん</p>
+                        <p class="example__foot-item">5ヶ月でTOEFL68→109点</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?php get_template_part("contexts/template/cta"); ?>
 <?php get_footer(); ?>
