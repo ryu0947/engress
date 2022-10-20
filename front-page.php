@@ -71,40 +71,58 @@
         <div class="inner">
             <h2 class="section-title section-title--white">TOEFL成功事例</h2>
             <div class="example__list">
-                <div class="example__item">
-                    <p class="example__head">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p>
-                    <div class="example__picture">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-1.jpg" alt="">
+                <?php
+                $example_group = SCF::get('example');
+                foreach ($example_group as $example) :
+                ?>
+                    <div class="example__item">
+                        <p class="example__head"><?php echo $example['clear']; ?></p>
+                        <div class="example__picture">
+                            <img src="<?php echo wp_get_attachment_url($example['picture']); ?>" alt="">
+                        </div>
+                        <div class="example__foot">
+                            <p class="example__foot-item"><?php echo $example['job']; ?></p>
+                            <p class="example__foot-item"><?php echo $example['name']; ?></p>
+                            <p class="example__foot-item"><?php echo $example['result']; ?></p>
+                        </div>
                     </div>
-                    <div class="example__foot">
-                        <p class="example__foot-item">会社員</p>
-                        <p class="example__foot-item">T.Fujiyamaさん</p>
-                        <p class="example__foot-item">3ヶ月でTOEFL80→108点</p>
-                    </div>
-                </div>
-                <div class="example__item">
-                    <p class="example__head">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p>
-                    <div class="example__picture">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-2.jpg" alt="">
-                    </div>
-                    <div class="example__foot">
-                        <p class="example__foot-item">大学生</p>
-                        <p class="example__foot-item">Y.Takiyamaさん</p>
-                        <p class="example__foot-item">6ヶ月でTOEFL40→100点</p>
-                    </div>
-                </div>
-                <div class="example__item">
-                    <p class="example__head">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p>
-                    <div class="example__picture">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/front/example-3.jpg" alt="">
-                    </div>
-                    <div class="example__foot">
-                        <p class="example__foot-item">高校生</p>
-                        <p class="example__foot-item">M.Yamadaさん</p>
-                        <p class="example__foot-item">5ヶ月でTOEFL68→109点</p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
+        </div>
+    </section>
+    <section class="flow">
+        <div class="inner">
+            <h2 class="section-title">ご利用の流れ</h2>
+            <ol class="flow__list">
+                <li class="flow__item">
+                    <div class="flow__number">01</div>
+                    <div class="flow__item-body">
+                        <div class="flow__item-title">お問い合わせ</div>
+                        <p class="flow__item-text">まずはフォームまたはお電話からお申し込みください。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__number">02</div>
+                    <div class="flow__item-body">
+                        <div class="flow__item-title">ヒアリング</div>
+                        <p class="flow__item-text">現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__number">03</div>
+                    <div class="flow__item-body">
+                        <div class="flow__item-title">学習プランのご提供</div>
+                        <p class="flow__item-text">目標達成のために最適な学習プランをご提案致します。</p>
+                    </div>
+                </li>
+                <li class="flow__item">
+                    <div class="flow__number">04</div>
+                    <div class="flow__item-body">
+                        <div class="flow__item-title">ご入会</div>
+                        <p class="flow__item-text">お申込み完了後、レッスンがスタートします。</p>
+                    </div>
+                </li>
+            </ol>
         </div>
     </section>
 </main>
