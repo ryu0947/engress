@@ -125,6 +125,35 @@
             </ol>
         </div>
     </section>
+    <section class="faq">
+        <div class="inner">
+            <h2 class="section-title">よくある質問</h2>
+            <div class="faq__item">
+                <div class="faq__title" data-is-open="false">Engressはサラリーマンでも<br class="is-sp">学習を続けられるでしょうか？</div>
+                <div class="faq__item-inner">
+                    <p class="faq__text">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__title" data-is-open="false">教材はオリジナルのものを<br class="is-sp">使用しているのでしょうか？</div>
+                <div class="faq__item-inner">
+                    <p class="faq__text">EngressはTOEFLの過去の問題や最新の試験範囲までを網羅したオリジナルの教材を作成しています。</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__title" data-is-open="false">講師に日本人はいますか？</div>
+                <div class="faq__item-inner">
+                    <p class="faq__text">はい。各教室に2人以上の日本人講師が常駐しております。</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__title" data-is-open="false">TOEFL以外の海外大学合格の<br class="is-sp">サポートもしてもらえる<br class="is-sp">のでしょうか？</div>
+                <div class="faq__item-inner">
+                    <p class="faq__text">EngresssではTOEFL以外の英語資格や試験の学習のサポートは行なっておりません。</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?php get_template_part("contexts/template/cta"); ?>
 <?php get_footer(); ?>
