@@ -457,12 +457,12 @@
   display: flex;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .flow__item {
     height: 64px;
     line-height: 64px;
   }
-}
+} */
 
 .flow__item:not(:last-child) {
   margin-bottom: 8px;
@@ -494,7 +494,7 @@
   .flow__item-body {
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 18px 15px 18px 21px;
   }
 }
 
@@ -505,7 +505,6 @@
 @media screen and (min-width: 1024px) {
   .flow__item-title {
     position: relative;
-    padding-left: 21px;
     flex: 0 0 214px;
     line-height: calc(40 / 18);
     font-size: 18px;
@@ -525,7 +524,7 @@
 
 @media screen and (min-width: 1024px) {
   .flow__item-text {
-    padding-left: 53px;
+    margin-left: 53px;
     flex: 0 1 100%;
   }
 }
