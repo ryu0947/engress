@@ -154,6 +154,72 @@
             </div>
         </div>
     </section>
+    <section class="information">
+        <div class="inner">
+            <div class="information__inner">
+                <div class="information__blog">
+                    <h3 class="information__title">ブログ</h3>
+                    <?php
+                    $blog_pages = new WP_Query(array(
+                        'posts_per_page' => 3,
+                        'post_type' => 'post',
+                        'orderby' => 'date',
+                    ));
+                    ?>
+                    <?php if ($blog_pages->have_posts()) : ?>
+                        <ul class="information__blog-list">
+                            <?php while ($blog_pages->have_posts()) : $blog_pages->the_post(); ?>
+                                <li class="information__blog-item">
+                                    <div class="information__blog-left">
+                                        <div class="information__category">
+                                            <?php
+                                            $blog_category = get_the_category();
+                                            echo $blog_category[0]->name;
+                                            ?>
+                                        </div>
+                                        <?php
+                                        if (has_post_thumbnail()) {
+                                            the_post_thumbnail('full', ['class' => 'information__blog-img']);
+                                        } else {
+                                            echo '<img class="information__blog-img" src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                                        }
+                                        ?>
+                                    </div>
+                                    <div class="information__blog-right">
+                                        <a class="information__blog-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                        <time class="information__blog-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
+                                    </div>
+                                </li>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+                <div class="information__news">
+                    <h3 class="information__title">お知らせ</h3>
+                    <?php
+                    $news_category = get_the_category();
+                    $news_pages = new WP_Query(array(
+                        'posts_per_page' => 3,
+                        'post_type' => 'news',
+                        'orderby' => 'date',
+                    ));
+                    ?>
+                    <?php if ($news_pages->have_posts()) : ?>
+                        <ul class="information__news-list">
+                            <?php while ($news_pages->have_posts()) : $news_pages->the_post(); ?>
+                                <li class="information__news-item">
+                                    <time class="information__news-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
+                                    <a class="information__news-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                </li>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <?php get_template_part("contexts/template/cta"); ?>
 <?php get_footer(); ?>
