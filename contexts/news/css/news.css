@@ -2,7 +2,7 @@
   padding: 40px 0 80px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .news {
     padding: 58px 0 106px;
   }
@@ -12,7 +12,7 @@
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .news__list {
     margin-top: 44px;
   }
@@ -27,7 +27,7 @@
   border-bottom: 1px solid #d5d5d5;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .news__item {
     display: flex;
     align-items: center;
@@ -36,9 +36,9 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .news__date {
-    flex: 0 0 85px;
+    flex: 0 0 96px;
   }
 
   .news__title {
