@@ -12,26 +12,28 @@
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post() ?>
                 <div class="blog__item">
-                    <div class="blog__picture">
-                        <div class="blog__category">
+                    <a class="blog__item-inner" href="<?php the_permalink(); ?>">
+                        <div class="blog__picture">
+                            <div class="blog__category">
+                                <?php
+                                $category = get_the_category();
+                                echo $category[0]->name;
+                                ?>
+                            </div>
                             <?php
-                            $category = get_the_category();
-                            echo $category[0]->name;
+                            if (has_post_thumbnail()) {
+                                the_post_thumbnail('full', ['class' => 'blog__img']);
+                            } else {
+                                echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                            }
                             ?>
                         </div>
-                        <?php
-                        if (has_post_thumbnail()) {
-                            the_post_thumbnail('full', ['class' => 'blog__img']);
-                        } else {
-                            echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
-                        }
-                        ?>
-                    </div>
-                    <div class="blog__info">
-                        <time class="blog__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
-                        <h3 class="blog__title"><a class="blog-lower__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <p class="blog__text"><?php the_excerpt(); ?></p>
-                    </div>
+                        <div class="blog__info">
+                            <time class="blog__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
+                            <h3 class="blog__title"><?php the_title(); ?></h3>
+                            <p class="blog__text"><?php the_excerpt(); ?></p>
+                        </div>
+                    </a>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>

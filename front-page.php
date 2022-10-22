@@ -170,25 +170,27 @@
                         <ul class="information__blog-list">
                             <?php while ($blog_pages->have_posts()) : $blog_pages->the_post(); ?>
                                 <li class="information__blog-item">
-                                    <div class="information__blog-left">
-                                        <div class="information__category">
+                                    <a class="information__blog-item-inner" href="<?php the_permalink(); ?>">
+                                        <div class="information__blog-left">
+                                            <div class="information__category">
+                                                <?php
+                                                $blog_category = get_the_category();
+                                                echo $blog_category[0]->name;
+                                                ?>
+                                            </div>
                                             <?php
-                                            $blog_category = get_the_category();
-                                            echo $blog_category[0]->name;
+                                            if (has_post_thumbnail()) {
+                                                the_post_thumbnail('full', ['class' => 'information__blog-img']);
+                                            } else {
+                                                echo '<img class="information__blog-img" src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
+                                            }
                                             ?>
                                         </div>
-                                        <?php
-                                        if (has_post_thumbnail()) {
-                                            the_post_thumbnail('full', ['class' => 'information__blog-img']);
-                                        } else {
-                                            echo '<img class="information__blog-img" src="' . esc_url(get_template_directory_uri()) . '/img/common/no-img-icatch.png" alt="">';
-                                        }
-                                        ?>
-                                    </div>
-                                    <div class="information__blog-right">
-                                        <a class="information__blog-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                        <time class="information__blog-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
-                                    </div>
+                                        <div class="information__blog-right">
+                                            <p class="information__blog-text"><?php the_title(); ?></p>
+                                            <time class="information__blog-date" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-d'); ?></time>
+                                        </div>
+                                    </a>
                                 </li>
                             <?php endwhile; ?>
                             <?php wp_reset_postdata(); ?>
