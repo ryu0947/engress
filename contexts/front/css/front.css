@@ -53,13 +53,14 @@
 .mv {
   position: relative;
   width: 100%;
-  height: 400px;
-  background: url("../../../img/front/fv.jpg") no-repeat center / cover;
+  height: 380px;
+  background: url("../../../img/front/fv-sp.jpg") no-repeat center / cover;
 }
 
 @media screen and (min-width: 1024px) {
   .mv {
     height: 476px;
+    background: url("../../../img/front/fv.jpg") no-repeat center / cover;
   }
 }
 
@@ -313,13 +314,15 @@ Engressについて
   position: relative;
   margin-top: 46px;
   width: 100%;
-  height: 217px;
-  background: url("../../../img/front/price.jpg") no-repeat center / cover;
+  height: 182px;
+  background: url("../../../img/front/price-sp.jpg") no-repeat center / cover;
 }
 
 @media screen and (min-width: 1024px) {
   .plan {
     margin-top: 93px;
+    height: 217px;
+    background: url("../../../img/front/price.jpg") no-repeat center / cover;
   }
 }
 
@@ -612,7 +615,13 @@ Engressについて
 }
 
 .faq__text {
-  padding: 24px 0 24px 26px;
+  padding: 16px 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq__text {
+    padding: 24px 26px;
+  }
 }
 /*------------------------------------------------------
 お知らせ＆ブログ

@@ -381,22 +381,46 @@ header
 
 /* ブログ記事一覧ページ */
 .mv-lower--blog {
-  background-image: url("../../../img/blog/blog.jpg");
+  background-image: url("../../../img/blog/blog-sp.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower--blog {
+    background-image: url("../../../img/blog/blog.jpg");
+  }
 }
 
 /* ニュース記事一覧ページ */
 .mv-lower--news {
-  background-image: url("../../../img/news/news.jpg");
+  background-image: url("../../../img/news/news-sp.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower--news {
+    background-image: url("../../../img/news/news.jpg");
+  }
 }
 
 /* コース・料金ページ */
 .mv-lower--course {
-  background-image: url("../../../img/course/course.jpg");
+  background-image: url("../../../img/course/course-sp.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower--course {
+    background-image: url("../../../img/course/course.jpg");
+  }
 }
 
 /* お問い合わせページ */
 .mv-lower--contact {
-  background-image: url("../../../img/contact/contact.jpg");
+  background-image: url("../../../img/contact/contact-sp.jpg");
+}
+
+@media screen and (min-width: 1024px) {
+  .mv-lower--contact {
+    background-image: url("../../../img/contact/contact.jpg");
+  }
 }
 
 .mv-lower__title {
@@ -556,7 +580,13 @@ CTAエリア
   position: relative;
   width: 100%;
   height: 256px;
-  background: url("../../../img/common/cta.jpg") no-repeat center / cover;
+  background: url("../../../img/common/cta-sp.jpg") no-repeat center / cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .cta__bg {
+    background: url("../../../img/common/cta.jpg") no-repeat center / cover;
+  }
 }
 
 .cta__body {
