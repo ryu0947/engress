@@ -608,6 +608,7 @@ Engressについて
   overflow: hidden;
   height: 0;
   background-color: #f8f8f8;
+  transition: height 0.5s;
 }
 
 .faq__text {
