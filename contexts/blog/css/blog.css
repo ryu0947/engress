@@ -2,7 +2,7 @@
   padding: 40px 0 80px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog {
     padding: 58px 0 106px;
   }
@@ -12,22 +12,17 @@
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog__list {
     margin-top: 60px;
   }
-}
-
-.blog__item {
-  display: flex;
-  column-gap: 18px;
 }
 
 .blog__item:not(:first-child) {
   margin-top: 41px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog__item {
     column-gap: 50px;
   }
@@ -37,13 +32,33 @@
   }
 }
 
+.blog__item-inner {
+  display: flex;
+  column-gap: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog__item-inner {
+    column-gap: 50px;
+    transition: opacity 0.5s, text-decoration 0.5s;
+  }
+
+  .blog__item-inner:hover {
+    opacity: 0.5;
+  }
+
+  .blog__item-inner:hover .blog__title {
+    text-decoration: none;
+  }
+}
+
 .blog__picture {
   position: relative;
   flex: 0 0 140px;
   max-height: 103px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog__picture {
     flex: 0 0 240px;
     max-height: 179px;
@@ -75,38 +90,25 @@
 }
 
 .blog__title {
-  margin-top: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: calc(31 / 18);
-}
-
-@media screen and (min-width: 1024px) {
-  .blog__title {
-    margin-top: 10px;
-    font-size: 26px;
-    line-height: calc(39 / 26);
-  }
-}
-
-.blog__link {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-decoration: underline;
   word-break: break-all;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: calc(31 / 18);
 }
 
-@media screen and (min-width: 1024px) {
-  .blog__link {
+@media screen and (min-width: 820px) {
+  .blog__title {
     -webkit-line-clamp: 2;
     transition: text-decoration 0.5s, opacity 0.5s;
-  }
-
-  .blog__link:hover {
-    opacity: 0.6;
-    text-decoration: none;
+    margin-top: 10px;
+    font-size: 26px;
+    line-height: calc(39 / 26);
   }
 }
 
@@ -119,7 +121,7 @@
   word-break: break-all;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog__text {
     -webkit-line-clamp: 2;
   }
