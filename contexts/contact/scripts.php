@@ -1,7 +1,7 @@
 <?php
 function add_contact_page_scripts_files()
 {
-    if (is_page('contact')) {
+    if (is_page('contact') || is_page('thanks')) {
         wp_enqueue_style('contact-style', get_template_directory_uri() . '/contexts/contact/css/contact.css', array(), filemtime(get_theme_file_path('/contexts/contact/css/contact.css')), 'all');
     }
 }
