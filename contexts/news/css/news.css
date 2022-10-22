@@ -19,9 +19,6 @@
 }
 
 .news__item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 18px 0 18px 0;
   border-top: 1px solid #d5d5d5;
 }
@@ -32,6 +29,8 @@
 
 @media screen and (min-width: 1024px) {
   .news__item {
+    display: flex;
+    align-items: center;
     column-gap: 51px;
     padding: 23px 15px 24px 0;
   }
