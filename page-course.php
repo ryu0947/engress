@@ -66,13 +66,13 @@
                 </div>
             </div>
             <div class="price-table__item">
-                <div class="price-table__head">フッレックスプラン</div>
+                <div class="price-table__head">フレックスプラン</div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
                         <div class="price-table__money"><?php the_field('flex_plan'); ?></div>
                         <span class="price-table__text">*月額（税抜価格）</span>
                     </div>
-                    <p class="price-table__text">＊別途ご相談ください</p>
+                    <p class="price-table__text price-table__text--consult">＊別途ご相談ください</p>
                 </div>
             </div>
         </div>
