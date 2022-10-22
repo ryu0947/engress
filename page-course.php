@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="price-table__item">
-                <div class="price-table__head">フッレックスプラン</div>
+                <div class="price-table__head">フレックスプラン</div>
                 <div class="price-table__body">
                     <div class="price-table__monthly">
                         <div class="price-table__money"><?php the_field('flex_plan'); ?></div>

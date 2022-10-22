@@ -5,7 +5,7 @@
 <?php get_template_part("contexts/template/breadcrumb"); ?>
 <section class="blog">
     <div class="inner">
-        <h2 class="section-lower-title">新着記事</h2>
+        <h2 class="section-lower-title">新着一覧</h2>
         <div class="blog__list">
             <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
