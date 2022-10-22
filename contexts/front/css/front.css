@@ -57,7 +57,7 @@
   background: url("../../../img/front/fv-sp.jpg") no-repeat center / cover;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .mv {
     height: 476px;
     background: url("../../../img/front/fv.jpg") no-repeat center / cover;
@@ -81,7 +81,7 @@
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .mv__title {
     font-size: 48px;
     line-height: calc(65 / 48);
@@ -94,7 +94,7 @@
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .mv__text {
     margin: 25px 0 51px;
     line-height: calc(31 / 18);
@@ -256,7 +256,7 @@ Engressについて
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .feature__item {
     display: flex;
     column-gap: 50px;
@@ -271,7 +271,7 @@ Engressについて
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .feature__description {
     margin-bottom: 0;
     flex: 0 1 100%;
@@ -294,7 +294,7 @@ Engressについて
   font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .feature__title {
     margin: 25px 0 28px;
     line-height: calc(39 / 26);
@@ -302,7 +302,7 @@ Engressについて
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .feature__thumb {
     flex: 0 0 350px;
   }
@@ -318,7 +318,7 @@ Engressについて
   background: url("../../../img/front/price-sp.jpg") no-repeat center / cover;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .plan {
     margin-top: 93px;
     height: 217px;
@@ -342,7 +342,7 @@ Engressについて
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .plan__title {
     font-size: 26px;
   }
@@ -383,22 +383,28 @@ Engressについて
   margin-top: 100px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .example__list {
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 50px;
-    margin-top: 137px;
+    margin-top: 134px;
   }
+}
+
+.example__item {
+  text-align: center;
 }
 
 .example__item:not(:last-child) {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .example__item {
+    text-align: left;
     width: calc(33.3% - 30px * 2 / 3);
   }
 
@@ -636,7 +642,7 @@ Engressについて
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .information__inner {
     display: flex;
     column-gap: 67px;
@@ -651,17 +657,37 @@ Engressについて
 /*------------------------------------------------------
 ブログ
 ------------------------------------------------------*/
-.information__blog-list {
-  margin-top: 30px;
+@media screen and (min-width: 820px) {
+  .information__blog {
+    width: calc(50% - 67px / 2);
+  }
 }
 
-.information__blog-item {
-  display: flex;
-  column-gap: 20px;
+.information__blog-list {
+  margin-top: 32px;
 }
 
 .information__blog-item:not(:last-child) {
   margin-bottom: 31px;
+}
+
+.information__blog-item-inner {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .information__blog-item-inner {
+    transition: opacity 0.5s, text-decoration 0.5s;
+  }
+
+  .information__blog-item-inner:hover {
+    opacity: 0.4;
+  }
+
+  .information__blog-item-inner:hover .information__blog-text {
+    text-decoration: none;
+  }
 }
 
 .information__blog-left {
@@ -670,7 +696,7 @@ Engressについて
   height: 91px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .information__blog-left {
     flex: 0 0 150px;
     height: 110px;
@@ -700,7 +726,7 @@ Engressについて
   flex: 0 1 100%;
 }
 
-.information__blog-link {
+.information__blog-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -724,21 +750,22 @@ Engressについて
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .information__news {
     margin-top: 0;
+    width: calc(50% - 67px / 2);
   }
 }
 
 .information__news-list {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 .information__news-item:not(:last-child) {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .information__news-item:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -757,4 +784,15 @@ Engressについて
   overflow: hidden;
   margin-top: 14px;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .information__news-link {
+    transition: opacity 0.5s, text-decoration 0.5s;
+  }
+
+  .information__news-link:hover {
+    opacity: 0.4;
+    text-decoration: none;
+  }
 }

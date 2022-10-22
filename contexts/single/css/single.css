@@ -2,23 +2,23 @@
   padding: 40px 20px 48px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .blog-wrapper {
     display: flex;
     column-gap: 36px;
-    padding: 60px 0 68px;
+    padding: 60px 20px 68px;
     margin: auto;
     max-width: 895px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .primary {
-    max-width: 590px;
+    max-width: calc(590 / 900 * 100%);
   }
 
   .sidebar {
-    max-width: 269px;
+    max-width: calc(269 / 900 * 100%);
   }
 }
 
@@ -26,7 +26,7 @@
   padding: 40px 0 30px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article-news {
     padding: 60px 0 53px;
   }
@@ -36,7 +36,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article__head {
     margin-bottom: 60px;
   }
@@ -44,7 +44,7 @@
 
 .article__category {
   display: inline-block;
-  padding: 9px 25px;
+  padding: 7px 25px;
   line-height: calc(20 / 12);
   font-size: 12px;
   color: #fff;
@@ -89,7 +89,7 @@
   row-gap: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article__info {
     flex-direction: row;
     justify-content: space-between;
@@ -104,7 +104,7 @@
   word-break: break-all;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article__title {
     line-height: calc(48 / 28);
     font-size: 28px;
@@ -115,7 +115,7 @@
   margin-bottom: 24px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article__title--news {
     margin-bottom: 36px;
   }
@@ -328,7 +328,7 @@
   word-break: break-all;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article-recommend__title {
     line-height: calc(39 / 26);
     font-size: 26px;
@@ -350,8 +350,16 @@
 
 @media screen and (min-width: 1024px) {
   .article-recommend__inner {
-    display: flex;
     column-gap: 32px;
+    transition: opacity 0.5s, text-decoration 0.5s;
+  }
+
+  .article-recommend__inner:hover {
+    opacity: 0.4;
+  }
+
+  .article-recommend__inner:hover .article-recommend__name {
+    text-decoration: none;
   }
 }
 
@@ -361,7 +369,7 @@
   height: 102px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article-recommend__thumb {
     flex: 0 0 210px;
     height: 128px;
@@ -402,7 +410,7 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .article-recommend__name {
     margin-top: 24px;
     font-size: 18px;

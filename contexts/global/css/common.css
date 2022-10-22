@@ -27,6 +27,12 @@ body.is-fixed {
   padding: 0 15px;
 }
 
+@media screen and (min-width: 820px) {
+  .inner {
+    padding: 0 15px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .inner {
     padding: 0 30px;
@@ -49,7 +55,7 @@ body.is-fixed {
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .section-lower-title {
     font-size: 32px;
   }
@@ -117,7 +123,7 @@ header
   width: 114px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .header__logo {
     width: 136px;
   }
@@ -449,13 +455,7 @@ header
   background-color: #1b224c;
 }
 
-@media screen and (min-width: 1024px) {
-  .footer__body {
-    padding: 35px 0 68px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__container {
     margin: auto;
     max-width: 912px;
@@ -474,7 +474,7 @@ header
   row-gap: 16px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__list {
     margin-top: 10px;
     flex-direction: row;
@@ -494,7 +494,7 @@ header
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__link {
     line-height: calc(23 / 16);
     transition: opacity 0.3s;
@@ -510,7 +510,7 @@ header
   width: 140px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__logo {
     margin-bottom: 27px;
     width: 197px;
@@ -532,7 +532,7 @@ header
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__tel {
     margin-bottom: 11px;
   }
@@ -557,13 +557,14 @@ header
 }
 
 .footer__bottom {
+  padding: 0 20px;
   height: 36px;
   line-height: 36px;
   text-align: center;
   background-color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .footer__bottom {
     text-align: right;
   }
@@ -583,7 +584,7 @@ CTAエリア
   background: url("../../../img/common/cta-sp.jpg") no-repeat center / cover;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .cta__bg {
     background: url("../../../img/common/cta.jpg") no-repeat center / cover;
   }
@@ -607,7 +608,7 @@ CTAエリア
   border-radius: 25px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .request-btn--cta {
     width: 280px;
     height: 50px;
@@ -653,7 +654,7 @@ CTAエリア
   line-height: calc(38 / 24);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 820px) {
   .cta__tel {
     font-size: 36px;
     line-height: calc(50 / 36);
